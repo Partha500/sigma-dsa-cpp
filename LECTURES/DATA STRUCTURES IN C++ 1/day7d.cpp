@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int factorial(int n){
+    int fact=1;
+    for(int i=1;i<=n;i++){
+        fact *=i;
+    }
+    return fact;
+}
+int binocoeff(int n, int r){
+    int val1=factorial(n);
+    int val2=factorial(r);
+    int val3=factorial(n-r);
+
+    return val1/(val2 * val3);
+}
+int main(){
+
+    cout<<binocoeff(4,2)<<"\n";
+    return 0;
+}

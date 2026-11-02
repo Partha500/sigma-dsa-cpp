@@ -1,0 +1,16 @@
+# Compiled binaries — never commit these
+*.exe
+*.o
+*.out
+*.obj
+
+# Exclude LEETCODE folder — tracked in its own repo
+LEETCODE/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor dirs
+.vscode/
+.idea/
